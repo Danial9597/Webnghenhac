@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify UI</title>
+    <link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+
+    <div class="player-container">
+
+        <div class="song-info">
+            <img id="song-cover" class="cover">
+
+            <div>
+                <h3 id="song-title"></h3>
+                <p id="song-artist"></p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="control-buttons">
+                <button id="prev">⏮</button>
+                <button id="play">▶</button>
+                <button id="next">⏭</button>
+            </div>
+
+            <input type="range" id="progress" value="0">
+        </div>
+
+        <audio id="audio"></audio>
+    </div>
+
+    <script src="../js/product.js"></script>
+</body>
+</html>

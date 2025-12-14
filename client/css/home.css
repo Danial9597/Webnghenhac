@@ -1,0 +1,197 @@
+/* ===============================
+   NAVBAR LAYOUT
+================================ */
+.nav {
+    height: 65px;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* ===============================
+   LEFT SIDE
+================================ */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0fb4c9;
+    margin: 0;
+}
+
+/* Menu */
+.nav-menu a {
+    text-decoration: none;
+    color: #666;
+    margin-right: 18px;
+    font-size: 15px;
+    position: relative;
+    transition: 0.2s;
+}
+
+.nav-menu a:hover {
+    color: #333;
+}
+
+.nav-menu .active {
+    font-weight: bold;
+    color: #222;
+}
+
+.nav-menu .active::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 45%;
+    height: 2px;
+    background: #4e8cff;
+    border-radius: 2px;
+}
+
+/* ===============================
+   SEARCH BOX
+================================ */
+.nav-search {
+    width: 320px;
+    height: 38px;
+    background: #f4f6f9;
+    border-radius: 22px;
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    transition: 0.2s;
+}
+
+.nav-search:focus-within {
+    border-color: #b3b3b3;
+    background: #ffffff;
+}
+
+.nav-search input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.nav-search i {
+    font-size: 16px;
+    color: #666;
+}
+
+/* ===============================
+   RIGHT SIDE
+================================ */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+    transition: 0.2s;
+}
+
+.icon:hover {
+    color: #333;
+}
+
+/* ===============================
+   NOTIFICATION BADGE
+================================ */
+.notification {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background: #ff3d57;
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 50px;
+}
+
+/* ===============================
+   AVATAR
+================================ */
+.avatar-box img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    transition: 0.2s ease;
+}
+
+.avatar-box img:hover {
+    border-color: #888;
+}
+/* GRID BÀI HÁT */
+.content {
+    padding: 20px;
+}
+
+.song-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+.song-item {
+    background: #f5f7fa;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.song-item:hover {
+    background: #e8eef4;
+    transform: translateY(-3px);
+}
+
+.song-item img {
+    width: 100%;
+    height: 160px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.song-item h4 {
+    margin: 10px 0 5px;
+    font-size: 15px;
+    color: #222;
+}
+
+.song-item p {
+    margin: 0;
+    color: #666;
+    font-size: 13px;
+}

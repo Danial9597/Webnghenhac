@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playlist</title>
+  <link rel="stylesheet" href="../css/playlist.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="nav">
+    <!-- Logo -->
+    <div class="nav-left">
+        <h1 class="logo">MusicHub</h1>
+
+        <nav class="nav-menu">
+            <a class="active" href="home.html">Trang Chủ</a>
+            <a href="Playlist.html">Playlist</a>
+        </nav>
+    </div>
+
+    <!-- Search -->
+    <div class="nav-search">
+        <input type="text" placeholder="Tìm bài hát, nghệ sĩ, người dùng...">
+        <i class="fa fa-search"></i>
+    </div>
+
+    <!-- Right icons + avatar -->
+    <div class="nav-right">
+        <a class="fa-regular fa-pen-to-square icon"></a>
+        </div>
+
+        <!-- Avatar -->
+        <div class="avatar-box">
+            <label for="avatarInput">
+                <img id="avatarImg" src="default-avatar.png" alt="Avatar">
+            </label>
+            <input type="file" id="avatarInput" accept="image/*" hidden>
+        </div>
+    </div>
+</header>
+
+
+  <div class="playlist-container">
+    <h2 class="playlist-title">Playlist</h2>
+
+    <table class="table text-white">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Hình</th>
+        <th>Tiêu đề</th>
+          <th>Nghệ sĩ</th>
+          <th>Thao tác</th>
+        </tr>
+      </thead>
+      <tbody id="product-list">
+        <!-- Dữ liệu sẽ load ở đây -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+  <!-- JS Playlist -->
+  <script src="../js/playlist.js"></script>
+</body>
+</html>
+

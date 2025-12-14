@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="../js/home.js" defer></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="nav">
+
+        <div class="nav-left">
+            <h1 class="logo">MusicHub</h1>
+
+            <nav class="nav-menu">
+                <a class="active" href="#">Trang Chủ</a>
+                <a href="Playlist.html">Playlist</a>
+                <a href="post.html">Đăng Bài</a>
+            </nav>
+        </div>
+
+        <div class="nav-search">
+            <input type="text" placeholder="Tìm bài hát...">
+            <i class="fa fa-search"></i>
+        </div>
+
+        <div class="nav-right">
+            <a class="fa-regular fa-pen-to-square icon"></a>
+        </div>
+
+        <div class="avatar-box">
+            <a href="admin.html">
+                <img id="avatarImg" src="default-avatar.png" alt="Avatar">
+            </a>
+            <input type="file" id="avatarInput" accept="image/*" hidden>
+        </div>
+
+    </header>
+
+    <!-- CONTENT -->
+    <div class="content">
+        <h2 style="margin-top:100px;">Bài hát mới nhất</h2>
+        <div id="songList" class="song-grid"></div>
+    </div>
+
+</body>
+</html>

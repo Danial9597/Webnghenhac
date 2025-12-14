@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Bài | MusicHub</title>
+    <link rel="stylesheet" href="../css/post.css">
+</head>
+<body>
+
+<header class="nav">
+    <div class="nav-left">
+        <h1 class="logo">MusicHub</h1>
+        <nav class="nav-menu">
+            <a href="home.html">Trang Chủ</a>
+            <a href="Playlist.html">Playlist</a>
+            <a class="active" href="#">Đăng Bài</a>
+        </nav>
+    </div>
+</header>
+
+<div class="post-container">
+    <h2>Đăng bài mới</h2>
+
+    <!-- Tiêu đề -->
+    <label class="label">Tiêu đề bài viết</label>
+    <input id="postTitle" class="input" type="text" placeholder="Nhập tiêu đề...">
+
+    <!-- Nội dung -->
+    <label class="label">Mô tả</label>
+    <textarea id="postContent" class="textarea" placeholder="Viết gì đó..."></textarea>
+
+    <!-- Tag -->
+    <label class="label">Thẻ (tags)</label>
+    <input id="postTag" class="input" type="text" placeholder="#cosplay #music #genshin">
+
+    <!-- Upload ảnh -->
+    <label class="label">Ảnh</label>
+    <input id="postImages" type="file" multiple accept="image/*">
+    <div id="preview"></div>
+
+    <!-- Nút đăng -->
+    <button class="btn" onclick="publishPost()">Đăng bài</button>
+</div>
+
+<script src="../js/post.js"></script>
+
+</body>
+</html>

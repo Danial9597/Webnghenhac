@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/admin.css">
+
+  <!-- Icon -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body onload="loadUser()">
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <span>👤 User: <strong id="user_span"></strong></span>
+
+      <div class="buttons">
+        <button class="home-btn" onclick="goHome()">🏠 Home</button>
+        <button class="logout" onclick="logoutUser()">Log out</button>
+      </div>
+    </div>
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+
+      <!-- Top -->
+      <div class="profile-top">
+        <img id="avatar"
+             src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y"
+             class="avatar">
+
+        <div class="info">
+          <p id="email_display"></p>
+          <p class="avatar-note">Upload your own avatar below 👇</p>
+        </div>
+      </div>
+
+      <!-- Upload -->
+      <div class="upload-area">
+        <img id="imagePreview"
+             class="image-preview"
+             src="https://via.placeholder.com/150"
+             alt="Preview">
+        <br>
+        <input type="file" id="profileImage" accept="image/*">
+      </div>
+
+      <!-- Form -->
+      <form class="account-form" id="userForm">
+        <h2>Account info</h2>
+
+        <label>
+          Username
+          <input type="text" id="username">
+        </label>
+
+        <label>
+          Email
+          <input type="email" id="email">
+        </label>
+
+        <label>
+          Password
+          <input type="password" id="password">
+        </label>
+
+        <label>
+          Full name
+          <input type="text" id="fullName">
+        </label>
+
+        <!-- CHỈ GIỮ 1 NÚT SAVE -->
+        <button type="submit" class="save-btn" style="margin-top: 10px;">
+          ✔ Save
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- JS (ĐƯỜNG DẪN CHUẨN) -->
+  <script src="../js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    background: #121212;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.playlist-container {
+    width: 600px;
+    margin-top: 90px;
+}
+
+/* Header dark theme */
+.nav {
+    height: 65px;
+    width: 100%;
+    background: #181818;
+    border-bottom: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-left { display: flex; align-items: center; gap: 25px; }
+.logo { font-size: 22px; color: #11b2c8; margin: 0; }
+.nav-menu a { text-decoration: none; color: #ccc; margin-right: 15px; font-size: 15px; position: relative; }
+.nav-menu .active { font-weight: bold; color: #fff; }
+.nav-menu .active::after { content: ""; position: absolute; bottom: -5px; left: 0; width: 40%; height: 2px; background: #558cff; border-radius: 2px; }
+
+.nav-search {
+    width: 320px;
+    height: 38px;
+    background: #282828;
+    border-radius: 25px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #444;
+}
+.nav-search input { flex: 1; background: none; border: none; outline: none; padding-left: 10px; font-size: 14px; color: #fff; }
+.nav-search i { font-size: 16px; color: #ccc; }
+
+.nav-right { display: flex; align-items: center; gap: 18px; }
+.icon { font-size: 20px; cursor: pointer; color: #ccc; }
+.icon:hover { color: #fff; }
+
+.avatar-box img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; cursor: pointer; border: 2px solid #ddd; transition: 0.2s; }
+.avatar-box img:hover { border-color: #999; }
+
+/* Playlist table */
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px; text-align: center; }
+th { color: #aaaaaa; }
+tr { transition: 0.2s; }
+tr:hover { background: #282828; }
+img { width: 60px; height: 60px; border-radius: 10px; object-fit: cover; }
+
+/* Delete button */
+.btn-delete-product {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-delete-product:hover {
+    background: #ff4d4d;
+    transform: scale(1.05);
+}

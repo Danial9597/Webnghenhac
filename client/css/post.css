@@ -1,0 +1,104 @@
+body {
+    font-family: Arial;
+    background: #f6f6f6;
+    margin: 0;
+}
+
+/* NAV giống của bạn */
+.nav {
+    height: 65px;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #e7e7e7;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 25px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    font-size: 22px;
+    color: #11b2c8;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #555;
+    margin-right: 20px;
+}
+
+.nav-menu .active {
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #558cff;
+}
+
+/* Form đăng bài */
+.post-container {
+    width: 600px;
+    margin: 100px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input, .textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.textarea {
+    height: 120px;
+    resize: none;
+}
+
+#preview {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+#preview img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    background: #558cff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #3a6ee8;
+}
